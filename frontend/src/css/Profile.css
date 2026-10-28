@@ -1,0 +1,67 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 50px 20px 20px 0px;     
+}
+
+.menu-item {
+  margin: 0 25px;
+  font-family: 'FluffyFont';
+  font-size: large;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  position: relative;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  color: white;
+}
+
+.underline {
+  position: absolute;
+  height: 5px;          
+  background: white;
+  border-radius: 1.5px;
+  transition: left 0.5s ease, width 0.3s ease, top 0.3s ease;
+}
+
+#avatar:hover{
+  filter: brightness(0.85);
+  transition: 0.3s ease;
+}
+
+#avatar:not(:hover){
+  transition: 0.3s ease;
+}
+
+/*Nickname*/
+#nicknamein {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nickname-text {
+  font-family: "FluffyFont";
+  font-size: 4vw;
+  font-weight: normal;
+  color: #fff;
+  cursor: pointer;
+  transition: filter 0.3s ease; /* плавный ховер */
+}
+
+.nickname-text:hover {
+  filter: brightness(0.8); /* затемнение при наведении */
+}
+
+.nickname-input {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+}
